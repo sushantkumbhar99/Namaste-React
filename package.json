@@ -1,0 +1,22 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "This is the namaste react by sushant",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushantkumbhar99/Namaste-React.git"
+  },
+  "author": "Sushant Kumbhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushantkumbhar99/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/sushantkumbhar99/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
