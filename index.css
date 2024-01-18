@@ -1,4 +1,14 @@
-#heading
+.title
 {
-    color: red;
+    background-color: rgb(173, 173, 154);
+    color: rgb(0, 0, 0);
+    padding: 10px ;
+    
+}
+
+#title2
+{
+    background-color: #978d8d;
+    color: black;
+ 
 }
