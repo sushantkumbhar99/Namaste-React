@@ -1,18 +1,28 @@
-const heading = React.createElement("div",{id:"parent"},
-  [  React.createElement( "div" ,{id:"child"},
-       [ React.createElement("h1",{} ,"This is the inside in the child"),
-          React.createElement("h2",{} ,"This is the inside in the child")]
-        ),
-    
-        React.createElement( "div" ,{id:"child2"},
-        [ React.createElement("h1",{} ,"This is the inside in the child"),
-           React.createElement("h2",{} ,"This is the inside in the child")]
-         ) 
-  ]
-        );
 
-     console.log(heading);
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(heading);
- 
+
+
+import React from 'react';
+import  ReactDOM from 'react-dom/client';
+
+
+
+// const heading = React.createElement("div",{id:"parent"},"This is the inside in the child");
+
+    //  const jsxHeading = <h1> Namaste React with sushant</h1>
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+    const Title = () =>{
+        return <h2> This is the first title of my componen </h2>
+    }
+
+
+
+    const ComponentHeading = () =>  (
+        <div id='compo'>
+            <Title/>
+         <h1>First component</h1>
+         </div>
+    )
+
+root.render(<ComponentHeading/>); 
