@@ -10,6 +10,9 @@ import  ReactDOM from 'react-dom/client';
 // const heading = React.createElement("div",{id:"parent"},"This is the inside in the child");
 
     //  const jsxHeading = <h1> Namaste React with sushant</h1>
+
+
+    // root element
     const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //     const Title = () =>{
@@ -49,27 +52,42 @@ import  ReactDOM from 'react-dom/client';
 //Pass attributes into the tag in JSX
 
 
-const add = 9+9;
-const Title = () =>(
+// const add = 9+9;
+// const Title = () =>(
   
-         <div className='title'>
-           <h1>This is h1 in React Component</h1>
-           <h2>This is h2 in React Component</h2>
-           <h3>This is h3 in React Component</h3>
-           {add}
-        </div>
-)
+//          <div className='title'>
+//            <h1>This is h1 in React Component</h1>
+//            <h2>This is h2 in React Component</h2>
+//            <h3>This is h3 in React Component</h3>
+//            {/* {add} */}
+//         </div>
+// )
 
 
 //Composition of Component(Add a component inside another)
 
 
-const  Title2 = () => (
-     <div id='title2'>
-        <h1>This is the new component</h1>
-      {<Title/>}  
-      {<Title></Title>}
-     </div>
+// const  Title2 = () => (
+//      <div id='title2'>
+//         <h1>This is the new component</h1>
+//       {<Title/>}  
+//       {/* {<Title></Title>} */}
+//      </div>
+// )
+
+
+const Heading = ()=> (
+    <div id='header-main'>
+        <div className="header-logo">SUSHANT~Logo</div>
+        <div >
+            <input className="header-search" type="text" placeholder='Search here...'  />
+            <label htmlFor="">Search</label>
+        </div>
+        <div className="header-user">
+           <span><i class="fa-regular fa-user"></i></span>
+        </div>
+    </div>
 )
 
- root.render(<Title2/>); 
+
+ root.render(<Heading/>); 
