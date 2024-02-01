@@ -18,10 +18,10 @@ const Body= () =>{
               const filteredList = listofRestaurants.filter( (resa)=> resa.info.avgRating >= 4.6);
                  setListofRestaurants(filteredList);
                  console.log(filteredList);
-            }} 
-            >Top rated Restaruants</button>
+            }} >Top rated Restaruants</button>
 
            </div>
+        
          </div>
          <div className="res-cards">
        

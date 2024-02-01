@@ -11,6 +11,7 @@ AppLayout =>
  -searchbar
  -restaurant container
   -Restaurant
+
      -img,name of restro , star-rating etc
      
  3-footer
@@ -21,5 +22,6 @@ AppLayout =>
    
    
 ----------------------------------------------------------------------------------------------------------
+
 
 

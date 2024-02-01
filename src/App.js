@@ -1,8 +1,7 @@
 import React from 'react';
-
+import  ReactDOM from 'react-dom/client';
 import Header from './new_folder/Header';
 import Body from './new_folder/Body';
-import  ReactDOM from 'react-dom/client';
 
 
 const Applayout = ()=>{
@@ -14,10 +13,5 @@ return(
 )
 };
 
-
-
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
  root.render(<Applayout/>); 
-
-// export default Applayout;
