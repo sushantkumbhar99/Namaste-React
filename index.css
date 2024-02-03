@@ -1,33 +1,12 @@
-/* .title
-{
-    background-color: rgb(173, 173, 154);
-    color: rgb(0, 0, 0);
-    padding: 10px ;
-    
-}
-
-#title2
-{
-    background-color: #978d8d;
-    color: black;
  
-} */
-
- /* FOOD ORDER APP HEADER SECTION */
-
 *{
     margin: 0;
     padding: 0;
     font-family:sans-serif ;
     
-}
-
-
- 
-
-
-
- .header{
+  }
+  
+  .header{
     width: 100%;
      height: 100px;
      display: flex;
@@ -35,84 +14,115 @@
      margin: auto;
      background : rgb(255 255 255);
      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+  }
+ 
+  .list{
+    display: flex;
+  }
 
- }
-
- .logo-img{
+  .logo-img{
     width: 120px;
     margin: auto;
     mix-blend-mode: multiply;
- }
-
- .list>ul{
+  }
+  
+  .list>ul{
     display: flex;
     list-style-type: none;
- }
-
- .list>ul>li{
+  }
+  
+  .list>ul>li{ 
     font-weight: 600;
     font-size: 18px;
     color: rgb(0, 0, 0);
-    margin:10.5% 20px;
- }
+    /* margin:10.5% 10px; */
+   
+    padding: 45px 20px;
 
- /* body part */
+  }
+  .login{
+    
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    /* border: none; */
+    font-family:sans-serif ;
+     margin-right: 5px;
+    margin-top: 10px;
+  }
+  
+  /* body part */
    .body{
     background-color: rgb(250 250 250);
     width: 99%;
-    margin: auto;
+    margin:5px 10px;
+
    }
- 
-  .search{
+  
+  .filter{
     display: flex;
-    margin: 20px 75px;
+    margin: 10px 75px;
   }
-  .search>input{
+  .filter>input{
     height: 25px;
     width: 250px;
     margin-top: 10px;
   }  
-
-  .search-button{
+  
+  .toprated-button{
     margin-left: 10px;
-    padding: 5.5px 10px;
-    margin-top: 10px;
-
+    /* padding: 5.5px 10px;
+    margin-top: 10px; */
+  
   }
   .res-cards{
-  
-   display: flex;
-   flex-wrap:  wrap;
-   width: 100%;
    
+   display: flex;
+   flex-wrap:wrap;
+   width: 100%;
 
+  
    
   }
- .res-card{
-    width: 230px;
+  .res-card{
+    width:230px;
     padding: 5px;
     background-color: #fcfcfc;
     margin:10px 5px;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; 
- }
- 
+  }
+  
+  
   .res-card:hover{
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 10px;
     background-color: #fcfcf3;
     cursor: pointer;
   }
- .restro-img{
+  .restro-img{
     width: 100%;
-    height: 150px;
+    height: 140px;
      border-radius: 5px;
- }
- 
+     background-repeat: no-repeat;
+  }
   
- .res-data>h3,h5{
+  
+  .res-data>h3,h5{
     padding: 5px;
    padding-left: 0px;
     
- }
- 
+  }
+  
+  .shimmer-cards{
+    display: flex;
+    flex-direction: wrap;
+  }
+
+  .shimmer-card{
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 20px;
+  }
