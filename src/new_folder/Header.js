@@ -1,10 +1,13 @@
-import React from 'react';
 import { LOGO_URL } from '../utils/constant';
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
+import React from 'react';
 const Header = () => {
 
+
   const [btnLogin, setBtnLogin] =useState("LOGIN");
+  console.log("Header");
+ 
 
     return(
          <div className="header">
@@ -15,10 +18,11 @@ const Header = () => {
             <div className="list">
               <ul>
                 
-              <li>HOME</li>
-              <li>CONTACT</li>
-              <li>ABOUT</li>
-              <li>CART</li>
+              <li> <Link to={"/"}>HOME</Link></li>
+              <li> <Link to={"/about"}>ABOUT</Link></li>
+              <li> <Link to={"/contact"}>CONTACT</Link></li>
+              <li>  CART </li>
+               
               
               </ul>
               <button className='login' onClick={

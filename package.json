@@ -18,16 +18,14 @@
   },
   "homepage": "https://github.com/sushantkumbhar99/Namaste-React#readme",
   "devDependencies": {
-    "@babel/core": "^7.23.9",
-    "@babel/preset-env": "^7.23.9",
-    "@babel/preset-react": "^7.23.3",
-    "http-proxy-middleware": "^2.0.6",
-    "parcel": "^1.12.4",
-    "parcel-bundler": "^1.12.5"
+    "cssnano": "^6.0.3",
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.34"
   },
   "dependencies": {
+    "@parcel/source-map": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "request": "^2.88.2"
+    "react-router-dom": "^6.22.0"
   }
 }
