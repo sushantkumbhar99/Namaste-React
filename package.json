@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/sushantkumbhar99/Namaste-React#readme",
   "devDependencies": {
-    "cssnano": "^6.0.3",
-    "parcel": "^2.11.0",
-    "postcss": "^8.4.34"
+    "parcel": "^2.11.0"
   },
   "dependencies": {
     "@parcel/source-map": "^2.1.1",

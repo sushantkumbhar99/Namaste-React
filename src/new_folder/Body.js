@@ -3,7 +3,8 @@ import React from "react";
  
 import Restrocard from "./Restrocard";
 import { useState,useEffect} from "react";
-import Shimmer from "./Shimmer";
+
+import { Link } from "react-router-dom";
 
 
 const Body= () =>{
@@ -13,7 +14,7 @@ const Body= () =>{
   const [searchText, setSearchText] = useState("");
   const [filteredRestaurant, setFilteredRestraunt] =useState([]);
 
-  // console.log("searched");
+ 
 
   useEffect(()=>{fetchData();} ,[])
     
@@ -25,17 +26,17 @@ const Body= () =>{
  
       const json= await data.json();
 
-      console.log(json);
- 
-      setListofRestaurants(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-      setFilteredRestraunt(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+      // console.log(json);
+      console.log("Body rendered");
+      setListofRestaurants(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []);
+      setFilteredRestraunt(json.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []);
   }
   //
 
-     return  listofRestaurants.length ===  0 ? <Shimmer/> : (
+     return  (
         <div className="body">
          <div className="filter">
-
+        
           <div className="search">
             <input type="text" className="text-search" value={searchText} 
               placeholder="find your food..." 
@@ -59,7 +60,7 @@ const Body= () =>{
               const filteredList = listofRestaurants.filter( (resa)=> resa.info.avgRating >= 4);
 
                 setFilteredRestraunt(filteredList);
-                 console.log(filteredList);
+             
             }} >Top rated Restaruants</button>
 
            </div>
@@ -69,8 +70,10 @@ const Body= () =>{
 
          <div className="res-cards">
         {
-          filteredRestaurant.map ((restaurant) =>
-           <Restrocard key={restaurant.info.id}   resData={restaurant}/>
+          filteredRestaurant.map ((restaurant) => <Link 
+          key={restaurant.info.id} 
+           to={"/restaurant/"+restaurant.info.id}>
+           <Restrocard  resData={restaurant}/></Link>
            )
         }     
          </div>
