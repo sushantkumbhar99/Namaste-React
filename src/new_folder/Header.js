@@ -13,20 +13,20 @@ const Header = () => {
  
 
     return(
-         <div className="header  ">
+         <div className="flex justify-between bg-pink-100 shadow-lg  " >
              <div>
-              <img className="logo-img " src={LOGO_URL} alt="" />
+              <img className="w-40 ml-4 mix-blend-multiply  " src={LOGO_URL} alt="" />
            
              </div>
-            <div className=" list  ">
-              <ul className=' '>
-                <li className='  '>Status:{ onlineStatus ? "✅" : "🚫"}</li>
-              <li className='   '> <Link to={"/"}>HOME</Link></li>
-              <li className='  ' > <Link to={"/about"}>ABOUT</Link></li>
-              <li className=' '> <Link to={"/contact"}>CONTACT</Link></li>
-              <li className=''> <Link to={"/grocery"}>GROCERY</Link></li>
-              <li className=' '>  CART </li>
-              <button className=' ' onClick={
+            <div className="flex items-center ">
+              <ul className='flex m-4 font-semibold  text-lg'>
+                <li className=' px-4 '>Online Status:{ onlineStatus ? "✅" : "🚫"}</li>
+              <li className=' px-4  '> <Link to={"/"}>HOME</Link></li>
+              <li className=' px-4 ' > <Link to={"/about"}>ABOUT</Link></li>
+              <li className=' px-4'> <Link to={"/contact"}>CONTACT</Link></li>
+              <li className='px-4'> <Link to={"/grocery"}>GROCERY</Link></li>
+              <li className=' px-4'>  CART </li>
+              <button className=' px-4' onClick={
                 ()=>{
                   btnLogin==="LOGIN" ? setBtnLogin("LOGOUT") : setBtnLogin("LOGIN")
               }

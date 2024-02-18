@@ -7,8 +7,12 @@ const Grocery =()=>{
     return(
 
         <div>
-            <h1> This is the Grocery Page.!!</h1>
+            <h1 className="bg-slate-400"> This is the Grocery Page.!!</h1>
+        
+
         </div>
+     
+       
     )
 
 }
