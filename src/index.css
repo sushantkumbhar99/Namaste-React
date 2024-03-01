@@ -128,7 +128,7 @@
    margin-top: 40px;
  }      */
 
-
+ /**   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
 @keyframes rotate {
   100% {
     transform: rotate(360deg);
@@ -138,3 +138,12 @@
 .animate-spin-slow {
   animation: rotate 0.8s infinite linear;
 }
+.hove:hover{
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   */
+   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+   background-color: rgb(251, 251, 251);
+}
+
+
+ 

@@ -6,8 +6,8 @@ const Grocery =()=>{
 
     return(
 
-        <div>
-            <h1 className="bg-slate-400"> This is the Grocery Page.!!</h1>
+        <div className="mt-20 text-center pt-20">
+            <h1 className="font-semibold"> This is the Grocery Page.!!</h1>
         
 
         </div>
